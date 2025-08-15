@@ -26,7 +26,7 @@ RDKit is essential for calculating molecular descriptors. You can do this in the
 Using pip
 
 ```bash
-pip instal rdkit-pypi
+pip install rdkit-pypi
 ```
 Altenatively use conda environment
 
