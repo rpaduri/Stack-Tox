@@ -38,8 +38,6 @@ Here, "C1=CC=CC=C1" is the SMILES string for benzene.
 
 The script will display predicted labels (e.g., Toxic or Non-Toxic) for each molecule.
 
-If using a .smi file, it will output predictions for all molecules in the file.
-
 ### Example Run
 ```bash
 python stack-tox.py "O=C=O"
