@@ -63,10 +63,11 @@ Output:
 ``` bash
 Molecule: O=C=O → Prediction: Non-Toxic
 ```
-#### Notes
+### Notes
 
-Ensure your SMILES input is valid.
+- Ensure your SMILES input is valid.
 
-The model is pre-trained; no training is required by the user.
+- The model is pre-trained; no training is required by the user.
 
-Prediction speed depends on the number of molecules.
+- Prediction speed depends on the number of molecules.
+-  If you are facing problems with rdkit installation, refer to https://pypi.org/project/rdkit-pypi/
