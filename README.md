@@ -19,22 +19,7 @@ cd Stack-Tox
 ```bash
 pip install -r requirements.txt
 ```
-### 3. Install RDKit
 
-RDKit is essential for calculating molecular descriptors. You can do this in the following ways:
-
-Using pip
-
-```bash
-pip install rdkit-pypi
-```
-Altenatively use conda environment
-
-```bash
-conda create -n moldesc python=3.9 -y
-conda activate moldesc
-conda install -c conda-forge rdkit -y
-```
 ### Usage
 #### Option 1: Predict from a SMILES String
 
