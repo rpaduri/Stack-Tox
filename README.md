@@ -21,6 +21,8 @@ pip install -r requirements.txt
 ```
 ### 3. Install RDKit
 
+RDKit is essential for calculating molecular descriptors. You can do this in the following ways:
+
 Using pip
 
 ```bash
