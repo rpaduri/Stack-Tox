@@ -12,5 +12,5 @@ Stack-Tox is a machine learning-based tool for predicting the toxicity of molecu
 ### 1. Clone the Repository
 Open a terminal/command prompt and run:
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/rpaduri/Stack-Tox.git
+cd Stack-Tox
