@@ -45,14 +45,14 @@ def calculate_descriptors_verbose(smiles, descriptor_list):
     missing_indices = [i for i, val in enumerate(descriptors)
                        if pd.isna(val) or np.isinf(val)]
     if missing_indices:
-        print(f"⚠️ Warning: {len(missing_indices)} descriptors could not be calculated: {missing_indices}")
+        print(f"Warning: {len(missing_indices)} descriptors could not be calculated: {missing_indices}")
     else:
         print("All descriptors calculated successfully.")
 
     # Small molecule warning
     atom_count = mol.GetNumAtoms()
     if atom_count <= 3:
-        print(f"⚠️ Warning: Molecule is very small ({atom_count} atoms). Prediction may be unreliable.")
+        print(f"Warning: Molecule is very small ({atom_count} atoms). Prediction may be unreliable.")
 
     return descriptors, missing_indices
 
@@ -82,7 +82,7 @@ def preprocess_descriptors(descriptors, missing_indices, imputer, scaler):
 
     if missing_indices:
         if len(missing_indices) > descriptors.shape[1] // 2:
-            print("⚠️ More than 50% descriptors missing — setting missing values to 0.")
+            print("More than 50% descriptors missing — setting missing values to 0.")
             for idx in missing_indices:
                 descriptors[0, idx] = 0
         else:
@@ -91,7 +91,7 @@ def preprocess_descriptors(descriptors, missing_indices, imputer, scaler):
     else:
         print("No missing descriptors, skipping imputation.")
 
-    print("📏 Scaling descriptors...")
+    print("Scaling descriptors...")
     descriptors = scaler.transform(descriptors)
     return descriptors
 
