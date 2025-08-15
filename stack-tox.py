@@ -62,7 +62,7 @@ def calculate_descriptors_verbose(smiles, descriptor_list):
 # ----------------------------
 def load_pipeline():
     try:
-        model = joblib.load("model.pkl")
+        model = joblib.load("stacking_clf_model.pkl")
         scaler = joblib.load("scaler.pkl")
         imputer = joblib.load("imputer.pkl")
         with open("descriptor_list.txt") as f:
