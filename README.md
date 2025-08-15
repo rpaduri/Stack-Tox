@@ -51,5 +51,4 @@ Molecule: O=C=O → Prediction: Non-Toxic
 
 - Ensure your SMILES input is valid.
 - The model is pre-trained; no training is required by the user.
-- Prediction speed depends on the number of molecules.
--  If you are facing problems with rdkit installation, refer to https://pypi.org/project/rdkit-pypi/
+- If you are facing problems with rdkit installation, refer to https://pypi.org/project/rdkit-pypi/
