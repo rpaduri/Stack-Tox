@@ -9,13 +9,13 @@ Stack-Tox is a machine learning-based tool for predicting the toxicity of molecu
 
 ## Installation
 
-### 1. Clone the Repository
+### Clone the Repository
 Open a terminal/command prompt and run:
 ```bash
 git clone https://github.com/rpaduri/Stack-Tox.git
 cd Stack-Tox
 ```
-### 2. Install requirements
+### Install requirements
 ```bash
 pip install -r requirements.txt
 ```
