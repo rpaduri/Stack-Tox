@@ -21,7 +21,6 @@ pip install -r requirements.txt
 ```
 
 ### Usage
-#### Option 1: Predict from a SMILES String
 
 Run the script with a single SMILES input:
 ```bash
@@ -35,19 +34,6 @@ python stack-tox.py "C1=CC=CC=C1"
 
 Here, "C1=CC=CC=C1" is the SMILES string for benzene.
 
-#### Option 2: Predict from a .smi File
-
-You can also provide a file containing SMILES strings (one per line):
-```bash
-python stack-tox.py molecules.smi
-```
-
-Example molecules.smi file:
-```txt
-CCO
-C1=CC=CC=C1
-O=C=O
-```
 ### Output
 
 The script will display predicted labels (e.g., Toxic or Non-Toxic) for each molecule.
@@ -66,8 +52,6 @@ Molecule: O=C=O → Prediction: Non-Toxic
 ### Notes
 
 - Ensure your SMILES input is valid.
-
 - The model is pre-trained; no training is required by the user.
-
 - Prediction speed depends on the number of molecules.
 -  If you are facing problems with rdkit installation, refer to https://pypi.org/project/rdkit-pypi/
